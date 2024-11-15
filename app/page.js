@@ -12,7 +12,6 @@ export default function Home() {
       {/* Video Background */}
       <div className="fixed inset-0 z-0">
         <div className="absolute inset-0 bg-gray/60 z-10" /> {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-l from-green/80 to-transparent z-10" />
         <video
           autoPlay
           muted

@@ -18,8 +18,8 @@ const Footer = () => {
             <div className="space-y-6">
               <div className="flex items-center p-2 rounded">
                 <Image
-                  src="/assets/images/logo.png"
-                  alt="T.Wilson Builders"
+                  src="/assets/images/logo-white.png"
+                  alt="Apa logo"
                   width={180}
                   height={60}
                   className="object-contain"

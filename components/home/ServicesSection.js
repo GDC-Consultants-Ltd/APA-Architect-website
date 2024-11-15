@@ -88,7 +88,6 @@ const ServicesSection = () => {
               className="group relative cursor-pointer h-[400px]"
             >
               {/* Main Image */}
-
               <div className="relative h-full overflow-hidden">
                 <Image
                   src={service.image}
@@ -99,14 +98,20 @@ const ServicesSection = () => {
                 />
 
                 {/* Default Overlay */}
-                <div className="absolute inset-0 bg-black/30 transition-opacity duration-300 group-hover:opacity-0" />
+                <div className="absolute inset-0 bg-black/20 transition-opacity duration-300 group-hover:opacity-0" />
 
                 {/* Default Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-center transition-transform duration-300 group-hover:-translate-y-full">
-                  <h3 className="text-2xl font-semibold text-white mb-2">
-                    {service.title}
-                  </h3>
-                  <div className="w-12 h-0.5 bg-green mx-auto" />
+                <div className="absolute bottom-0 left-0 right-0 p-6 text-center transition-all duration-300 group-hover:opacity-0">
+                  {/* Semi-transparent box overlay */}
+                  <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+
+                  {/* Content - now using relative to appear above the overlay */}
+                  <div className="relative z-10">
+                    <h3 className="text-2xl font-semibold text-white mb-2">
+                      {service.title}
+                    </h3>
+                    <div className="w-12 h-0.5 bg-green mx-auto" />
+                  </div>
                 </div>
 
                 {/* Hover Overlay */}
@@ -119,7 +124,7 @@ const ServicesSection = () => {
                     <Link
                       href={service.link}
                       className="inline-flex items-center gap-2 text-white border-2 border-white px-6 py-2 rounded-full
-          hover:bg-white hover:text-green transition-colors duration-300"
+                        hover:bg-white hover:text-green transition-colors duration-300"
                     >
                       Read More
                       <ArrowRight size={18} />

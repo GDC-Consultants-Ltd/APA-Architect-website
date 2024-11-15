@@ -162,7 +162,7 @@ const SideNavigation = () => {
     <>
       {/* Hamburger Menu Button */}
       <button
-        className={`fixed top-8 left-8 z-50 flex items-center gap-3 transition-all duration-300 group
+        className={`fixed top-8 right-8 z-50 flex items-center gap-3 transition-all duration-300 group
           ${
             isScrolled
               ? "text-green hover:text-green/80"
@@ -185,7 +185,7 @@ const SideNavigation = () => {
       {/* Side Navigation Sheet */}
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetContent
-          side="left"
+          side="right"
           className="w-80 bg-white text-gray border-r border-gray/10 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
         >
           <SheetHeader className="border-none">
@@ -194,9 +194,8 @@ const SideNavigation = () => {
                 <Image
                   src="/assets/images/logo.png"
                   alt="Logo"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
+                  width={180}
+                  height={60}
                   style={{ width: "auto", height: "auto" }}
                 />
               </SheetTitle>

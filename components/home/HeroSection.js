@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Facebook, Youtube, Linkedin, Chrome } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -22,10 +23,26 @@ const HeroSection = () => {
   ];
 
   const socialLinks = [
-    { name: "Facebook", Icon: Facebook, url: "https://www.facebook.com/APA-Architects-and-Project-Management-107773769339881" },
-    { name: "YouTube", Icon: Youtube, url: "https://www.youtube.com/channel/UCIUxlVxrumvHO_5D9NapD2w" },
-    { name: "Google", Icon: Chrome, url: "https://plus.google.com/106821696143508735904/about" },
-    { name: "LinkedIn", Icon: Linkedin, url: "https://www.linkedin.com/in/aladina-harunani-69b94618" },
+    {
+      name: "Facebook",
+      Icon: Facebook,
+      url: "https://www.facebook.com/APA-Architects-and-Project-Management-107773769339881",
+    },
+    {
+      name: "YouTube",
+      Icon: Youtube,
+      url: "https://www.youtube.com/channel/UCIUxlVxrumvHO_5D9NapD2w",
+    },
+    {
+      name: "Google",
+      Icon: Chrome,
+      url: "https://plus.google.com/106821696143508735904/about",
+    },
+    {
+      name: "LinkedIn",
+      Icon: Linkedin,
+      url: "https://www.linkedin.com/in/aladina-harunani-69b94618",
+    },
   ];
 
   useEffect(() => {
@@ -38,6 +55,24 @@ const HeroSection = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
+      {/* Header - Logo and Menu aligned */}
+      <header className="relative z-20 px-8 flex justify-between items-center">
+        <Link href="/" className="inline-block">
+          <Image
+            src="/assets/images/logo-white.png"
+            alt="APA Architects"
+            width={320} 
+            height={120} 
+            priority
+            className="h-auto w-auto object-contain max-h-[140px]" // Increased max-height to 120px
+            style={{
+              filter: "brightness(1.2) contrast(1.2)",
+              maxWidth: "100%",
+              height: "auto",
+            }}
+          />
+        </Link>
+      </header>
       {/* Social Media Icons */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-row gap-6 z-20">
         {socialLinks.map(({ name, Icon, url }) => (
