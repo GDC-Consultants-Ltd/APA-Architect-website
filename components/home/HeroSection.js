@@ -22,10 +22,10 @@ const HeroSection = () => {
   ];
 
   const socialLinks = [
-    { name: "Facebook", Icon: Facebook, url: "#" },
-    { name: "YouTube", Icon: Youtube, url: "#" },
-    { name: "Google", Icon: Chrome, url: "#" },
-    { name: "LinkedIn", Icon: Linkedin, url: "#" },
+    { name: "Facebook", Icon: Facebook, url: "https://www.facebook.com/APA-Architects-and-Project-Management-107773769339881" },
+    { name: "YouTube", Icon: Youtube, url: "https://www.youtube.com/channel/UCIUxlVxrumvHO_5D9NapD2w" },
+    { name: "Google", Icon: Chrome, url: "https://plus.google.com/106821696143508735904/about" },
+    { name: "LinkedIn", Icon: Linkedin, url: "https://www.linkedin.com/in/aladina-harunani-69b94618" },
   ];
 
   useEffect(() => {
@@ -83,13 +83,13 @@ const HeroSection = () => {
             {" "}
             {/* Added justify-center */}
             <Link
-              href="tel:+64123456789"
+              href="tel:021 543 786"
               className="px-10 py-4 bg-green text-white text-lg font-semibold rounded-full hover:bg-green/90 transition-colors duration-300"
             >
               Call Us
             </Link>
             <Link
-              href="/quote"
+              href="#"
               className="px-10 py-4 bg-transparent text-white text-lg font-semibold rounded-full border-2 border-white/20 hover:border-white/40 hover:bg-white/10 transition-all duration-300"
             >
               Our Services

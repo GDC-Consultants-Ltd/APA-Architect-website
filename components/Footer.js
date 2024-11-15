@@ -41,31 +41,31 @@ const Footer = () => {
                   Home
                 </Link>
                 <Link
-                  href="/about"
+                  href="#"
                   className="block text-gray-100 hover:text-green-500 transition-colors font-medium"
                 >
                   About Us
                 </Link>
                 <Link
-                  href="/services"
+                  href="#"
                   className="block text-gray-100 hover:text-green-500 transition-colors font-medium"
                 >
                   Services
                 </Link>
                 <Link
-                  href="/our-works"
+                  href="#"
                   className="block text-gray-100 hover:text-green-500 transition-colors font-medium"
                 >
                   Our Work
                 </Link>
                 <Link
-                  href="/news-awards"
+                  href="#"
                   className="block text-gray-100 hover:text-green-500 transition-colors font-medium"
                 >
                   News & Awards
                 </Link>
                 <Link
-                  href="/contact"
+                  href="#"
                   className="block text-gray-100 hover:text-green-500 transition-colors font-medium"
                 >
                   Contact Us

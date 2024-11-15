@@ -13,7 +13,7 @@ const ContactSection = () => {
               Wanna Work With Our Professional Team? Contact Us.
             </h2>
 
-            <Link href="/contact">
+            <Link href="#">
               <Button
                 variant="secondary"
                 className="bg-white hover:bg-gray-100 text-gray-800 rounded-full px-10 py-6 flex items-center gap-2 transition-all duration-300 group"

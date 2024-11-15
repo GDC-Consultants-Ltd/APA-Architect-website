@@ -11,56 +11,56 @@ const ServicesSection = () => {
       image: "/assets/images/services/1.png",
       description:
         "Creating comfortable, functional homes that blend aesthetic appeal with practical design solutions.",
-      link: "/services/furniture",
+      link: "#",
     },
     {
       title: "Commercial Architecture",
       image: "/assets/images/services/2.jpg",
       description:
         "Innovative commercial spaces designed to enhance productivity and create a strong brand identity.",
-      link: "/services/carpentry",
+      link: "#",
     },
     {
       title: "Marae & Cultural Architecture",
       image: "/assets/images/services/3.jpg",
       description:
         "Designing culturally significant Marae spaces that honor heritage and foster community bonds.",
-      link: "/services/remodeling",
+      link: "#",
     },
     {
       title: "Landscape Architecture",
       image: "/assets/images/services/4.jpg",
       description:
         "Creating outdoor spaces that integrate natural beauty with sustainable design principles.",
-      link: "/services/furniture",
+      link: "#",
     },
     {
       title: "Interior Design",
       image: "/assets/images/services/5.jpg",
       description:
         "Crafting interiors that blend style with comfort, tailored to enhance living and working spaces.",
-      link: "/services/carpentry",
+      link: "#",
     },
     {
       title: "House & Floor Plans",
       image: "/assets/images/services/6.jpeg",
       description:
         "Developing efficient floor plans that maximize space, functionality, and aesthetic flow.",
-      link: "/services/remodeling",
+      link: "#",
     },
     {
       title: "Architectural Engineering",
       image: "/assets/images/services/7.jpg",
       description:
         "Offering engineering solutions that ensure structural integrity and compliance with standards.",
-      link: "/services/remodeling",
+      link: "#",
     },
     {
       title: "Project Management",
       image: "/assets/images/services/8.jpg",
       description:
         "Comprehensive project management from planning to execution, ensuring timely and quality outcomes.",
-      link: "/services/remodeling",
+      link: "#",
     },
   ];
 
