@@ -192,7 +192,7 @@ const SideNavigation = () => {
             <div className="flex justify-between items-center mb-8">
               <SheetTitle className="text-white text-lg font-medium">
                 <Image
-                  src="/assets/images/logo.jpeg"
+                  src="/assets/images/logo.png"
                   alt="Logo"
                   width={0}
                   height={0}
