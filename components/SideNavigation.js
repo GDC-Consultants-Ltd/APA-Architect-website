@@ -186,7 +186,7 @@ const SideNavigation = () => {
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetContent
           side="left"
-          className="w-80 bg-white text-gray border-r border-gray/10 overflow-y-auto"
+          className="w-80 bg-white text-gray border-r border-gray/10 overflow-y-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
         >
           <SheetHeader className="border-none">
             <div className="flex justify-between items-center mb-8">
